@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, withRouter } from 'react-router-dom';
+
 import './App.css';
+import MyHome from './components/MyHome';
+import MyHeader from './components/MyHeader';
+import MyLogin from './components/MyLogin';
+import MyRegister from './components/MyRegister';
+import MyVerification from './components/MyVerification';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App bg-light">
+        <MyHeader navBrand="Auth Project"/>
+        <div className="container card">
+            <Route exact path="/" component={MyHome} />
+            <Route path="/login" component={MyLogin} />
+            <Route path="/register" component={MyRegister} />
+            <Route path="/verify" component={MyVerification} />
+          </div>
       </div>
     );
   }

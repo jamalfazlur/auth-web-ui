@@ -32,7 +32,7 @@ class MyHeader extends Component{
                                 <Link to="/browse"><NavLink>Browse</NavLink></Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/register"><NavLink className="btn btn-default border-warning mr-1" href="/register">Register</NavLink></Link>
+                                <Link to="/register"><NavLink className="btn btn-default border-warning mr-1" href="/register"><i className="fas fa-user-plus" /> Register</NavLink></Link>
                             </NavItem>
 
                             <NavItem>

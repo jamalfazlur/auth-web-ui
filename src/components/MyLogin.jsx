@@ -28,6 +28,9 @@ class MyLogin extends Component{
                             <fieldset>
                                 <legend>Login!</legend>
                                 <hr />
+                                <div className="alert alert-warning">
+                                    <p><i>It's Nice to see you <b>come back</b>!</i></p>
+                                </div>
                                 <div className="form-group row">
                                     <label className="col-sm-4 col-form-label">Username</label>
                                     <div className="col-sm-8">

@@ -7,7 +7,8 @@ import MyHeader from './components/MyHeader';
 import MyLogin from './components/MyLogin';
 import MyRegister from './components/MyRegister';
 import MyVerification from './components/MyVerification';
-
+import MyHasVerified from './components/MyHasVerified';
+import MyUserList from './components/MyUserList';
 
 class App extends Component {
   render() {
@@ -18,7 +19,9 @@ class App extends Component {
             <Route exact path="/" component={MyHome} />
             <Route path="/login" component={MyLogin} />
             <Route path="/register" component={MyRegister} />
-            <Route path="/verify" component={MyVerification} />
+            <Route path="/waitingverification" component={MyVerification} />
+            <Route path="/verified" component={MyHasVerified} />
+            <Route path="/userlist" component={MyUserList} />
           </div>
       </div>
     );
